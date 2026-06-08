@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}Devfolio | Contact{% endblock %}
+
+{% block main %}
+<div class="container my-5">
+
+  <!-- Contact Page Header -->
+  <section class="contact-header text-center mb-5">
+    <h1 class="display-4 fw-bold mb-3">Get in Touch</h1>
+    <p class="lead text-muted fst-italic">
+      "Let's build something great together."
+    </p>
+  </section>
+
+  <hr class="my-5 text-muted opacity-25">
+
+  <!-- Contact Section Content -->
+  <section class="contact-content mb-5">
+    <div class="row g-5 align-items-center">
+
+      <!-- Left Side: Core Message -->
+      <div class="col-md-6">
+        <h2 class="h3 text-dark mb-4 fw-semibold">Let's Connect!</h2>
+        <p class="lh-lg text-muted mb-3">
+          Whether you want to discuss full-stack development architecture, collaborate on an open-source project, or
+          just talk tech over a cup of fresh coffee, my inbox is always open!
+        </p>
+        <p class="lh-lg text-muted mb-0">
+          I typically reply within a day. Feel free to drop me an email or reach out directly on any of my professional
+          channels.
+        </p>
+      </div>
+
+      <!-- Right Side: Contact Cards / Quick Links -->
+      <div class="col-md-6">
+        <div class="d-flex flex-column gap-3">
+
+          <!-- Email Card -->
+          <div class="d-flex align-items-center p-3 bg-light border border-light-subtle rounded shadow-sm">
+            <div class="bg-primary text-white rounded p-3 me-3 d-flex align-items-center justify-content-center"
+              style="width: 50px; height: 50px;">
+              <i class="fa-solid fa-envelope fs-4"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-bold text-dark">Email Me</h6>
+              <a href="mailto:yeminaung@example.com"
+                class="text-decoration-none text-primary fw-medium">yeminaung.dev@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="d-flex align-items-center p-3 bg-light border border-light-subtle rounded shadow-sm">
+            <div class="bg-dark text-white rounded p-3 me-3 d-flex align-items-center justify-content-center"
+              style="width: 50px; height: 50px;">
+              <i class="fa-brands fa-github fs-4"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-bold text-dark">GitHub</h6>
+              <a href="https://github.com/mryeminaung" target="_blank"
+                class="text-decoration-none text-dark fw-medium">github.com/mryeminaung</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="d-flex align-items-center p-3 bg-light border border-light-subtle rounded shadow-sm">
+            <!-- Fixed duplicate style attribute issue here -->
+            <div class="text-white rounded p-3 me-3 d-flex align-items-center justify-content-center"
+              style="width: 50px; height: 50px; background-color: #0a66c2 !important;">
+              <i class="fa-brands fa-linkedin-in fs-4"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-bold text-dark">LinkedIn</h6>
+              <a href="https://linkedin.com/in/mryeminaung" target="_blank" class="text-decoration-none fw-medium"
+                style="color: #0a66c2 !important;">linkedin.com/in/mryeminaung</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+{% endblock %}

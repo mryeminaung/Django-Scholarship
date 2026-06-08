@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Devfolio | Home{% endblock %}
+
+{% block main %}
+<div class="container my-5">
+
+  <!-- Hero Introduction Section -->
+  <section class="row align-items-center py-5 my-5">
+
+    <!-- Left Side: Introduction Text -->
+    <div class="col-md-8 text-center text-md-start">
+      <span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-semibold mb-3 fs-6">Available for
+        Internships & Roles 🚀</span>
+
+      <h1 class="display-3 fw-bold text-dark mb-3">
+        Hi, I'm <span class="text-primary">Ye Min Aung</span>
+      </h1>
+
+      <p class="lead text-secondary lh-lg mb-4">
+        I am a passionate learner and final-year engineering student who enjoys building clean, useful, and
+        user-friendly web and mobile experiences. I specialize in crafting high-performance backend architectures,
+        writing clean code, and creating intuitive interfaces.
+      </p>
+
+      <p class="text-muted mb-5">
+        This portfolio showcases my professional journey, full-stack skills, and the academic and production-ready
+        software systems I have been developing.
+      </p>
+
+      <!-- Action Buttons (CTAs) -->
+      <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start">
+        <!-- Primary Action: Download CV -->
+        <a href="{% static 'portfolio/docs/YeMinAung-CV.pdf' %}" download
+          class="btn btn-primary btn-sm px-5 py-3 fw-semibold shadow-sm rounded-pill d-inline-flex align-items-center justify-content-center">
+          <span class="me-2"><i class="fa-solid fa-download me-2"></i></span> Download CV
+        </a>
+
+        <!-- Secondary Action: View Projects -->
+        <a href="/projects/"
+          class="btn btn-outline-secondary btn-sm px-5 py-3 fw-semibold rounded-pill d-inline-flex align-items-center justify-content-center">
+          Explore My Work <span class="ms-2"><i class="fa-solid fa-arrow-right ms-2"></i></span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side: Decorative/Avatar Area -->
+    <div class="col-md-4 d-none d-md-flex justify-content-center">
+      <div class="position-relative">
+        <div
+          class="bg-light border border-light-subtle rounded-circle shadow-sm d-flex align-items-center justify-content-center overflow-hidden"
+          style="width: 240px; height: 240px;">
+          <img src="{% static 'portfolio/images/profile.jpg' %}" alt="Ye Min Aung Profile" class="w-100 h-100"
+            style="object-fit: cover;">
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+{% endblock %}

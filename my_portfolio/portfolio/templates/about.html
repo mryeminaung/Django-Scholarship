@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Devfolio | About{% endblock %}
+
+{% block main %}
+<div class="container my-5">
+
+  <!-- Header Section -->
+  <section class="about-header text-center mb-5">
+    <h1 class="display-3 fw-bold mb-3">About Me</h1>
+    <p class="lead text-muted fst-italic">
+      "A brief introduction to who I am and what I do."
+    </p>
+  </section>
+
+  <hr class="my-5 text-muted opacity-25">
+
+  <!-- Two-Column Layout: Who I Am & What I Do -->
+  <section class="row g-5 mb-5">
+
+    <!-- Column 1: Who I Am -->
+    <div class="col-md-6">
+      <h2 class="h3 text-dark mb-3 fw-semibold">Who I Am</h2>
+      <p class="lh-lg text-muted mb-3">
+        Hello! I am Ye Min Aung, a passionate final-year engineering student at the Myanmar Institute of
+        Information Technology (MIIT). Driven by a deep curiosity for how complex systems operate under the hood, I
+        focus on building resilient backend architectures and crafting clean, user-centric software.
+      </p>
+      <p class="lh-lg text-muted">
+        Based in Mandalay, I treat coding as both a science and a craft. I thrive on translating structural logic into
+        elegant solutions, maintaining clean version workflows, and designing apps that are as intuitive as they are
+        stable.
+      </p>
+    </div>
+
+    <!-- Column 2: What I Do -->
+    <div class="col-md-6">
+      <h2 class="h3 text-dark mb-4 fw-semibold">What I Do</h2>
+      <div class="d-flex flex-column gap-3">
+
+        <!-- Skill 1 -->
+        <div class="p-3 bg-light border-0 border-start border-primary border-4 shadow-sm rounded">
+          <h5 class="fw-bold mb-1 fs-6">Full-Stack Web Development</h5>
+          <p class="text-muted small mb-0">Designing high-performance backend APIs paired with responsive, dynamic
+            frontend components.</p>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="p-3 bg-light border-0 border-start border-success border-4 shadow-sm rounded">
+          <h5 class="fw-bold mb-1 fs-6">Cross-Platform Mobile Apps</h5>
+          <p class="text-muted small mb-0">Building highly performant, accessible mobile interfaces with seamless
+            database configurations.</p>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="p-3 bg-light border-0 border-start border-warning border-4 shadow-sm rounded">
+          <h5 class="fw-bold mb-1 fs-6">Data Analytics & Statistics</h5>
+          <p class="text-muted small mb-0">Processing complex datasets, running statistical models, and generating
+            automated forecasts.</p>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="p-3 bg-light border-0 border-start border-danger border-4 shadow-sm rounded">
+          <h5 class="fw-bold mb-1 fs-6">Clean System Architecture</h5>
+          <p class="text-muted small mb-0">Writing maintainable, modular code matching rigorous industry git workflows
+            and standards.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Interests Section (Coffee Break!) -->
+  <section class="about-interests mb-5">
+    <h2 class="h3 text-dark mb-3 fw-semibold">Beyond the Code</h2>
+    <div class="blockquote p-4 bg-light border-start border-secondary border-5 fst-italic rounded shadow-sm">
+      <p class="mb-0 lh-base text-secondary fs-6">
+        When I'm not sitting in front of a screen, you can usually find me exploring new coffee spots around town,
+        diving into a good book, or tinkering with side projects.
+      </p>
+    </div>
+  </section>
+
+  <hr class="my-5 text-muted opacity-25">
+</div>
+{% endblock %}
