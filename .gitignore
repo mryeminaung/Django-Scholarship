@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# Virtual environments (ALL projects)
+.venv/
+venv/
+ENV/
+env/
+
+# Databases (ALL projects)
+db.sqlite3
+*.sqlite3
+
+# Environment variables (ALL projects)
+.env
+.env.local
+
+# Django (ALL projects)
+*.log
+staticfiles/
+media/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
